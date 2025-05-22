@@ -1,0 +1,87 @@
+/* Centering the page */
+body, html {
+    height: 100%;
+    margin-bottom: 70px;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f2f5fc;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  /* Responsive iOS-like card container */
+  .welcome-container {
+    width: 100%;
+    max-width: 420px;
+    margin-top: auto;
+    padding: 32px 24px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #d1e3ff;
+  }
+  
+  /* Title and text */
+  .welcome-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  .welcome-highlight {
+    color: #007bff;
+  }
+  
+  .welcome-message {
+    color: #666;
+    font-size: 14px;
+    margin: 12px 0 24px;
+  }
+  
+  /* Buttons section */
+  .welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .welcome-buttons a {
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #007bff;
+    color: #fff;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Hover Animation */
+  .welcome-buttons a:hover {
+    background-color: #0056d2;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Click / Tap Animation */
+  .welcome-buttons a:active {
+    transform: scale(0.96);
+  }
+  
+  /* Secondary button styling */
+  .welcome-buttons a.secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    box-shadow: none;
+  }
+  
+  .welcome-buttons a.secondary:hover {
+    background-color: #e8f0ff;
+  }

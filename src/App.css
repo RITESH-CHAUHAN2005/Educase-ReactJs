@@ -1,0 +1,21 @@
+/* Extra styles reused by multiple pages */
+.profile-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+
+.account-header {
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f2f2f2;
+}

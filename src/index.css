@@ -1,0 +1,75 @@
+/* index.css or App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* ----- iPhone / iOS frame ----- */
+.phone-shell {
+  width: 375px;                       /* iPhone 13 width */
+  min-height: 720px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 32px;
+  box-shadow: 0 14px 34px rgba(0,0,0,.08);
+  overflow: hidden;                  /* clip page transitions */
+  display: flex;                     /* keep children full-size */
+  flex-direction: column;
+}
+
+/* ----- Common page layout ----- */
+.screen {
+  padding: 32px 24px 40px;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.brand { color: #6c3dff; }
+
+input,
+.btn {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 12px;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+.btn.primary {
+  background: #6c3dff;
+  color: #fff;
+  border: none;
+}
+
+.btn.secondary {
+  background: #ede6ff;
+  color: #6c3dff;
+  border: none;
+}
+
+.btn:active { transform: scale(0.98); }  /* small tap feel */
+
+/* simple radio row */
+.radio-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 8px 0 20px;
+}
+
+.radio-label { display:block; text-align:left; margin-top:16px; }
+
+h2 { margin: 0 0 8px; line-height: 1.3; }
+p  { margin: 0 0 24px; color:#666; }
